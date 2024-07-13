@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <title>The Coolest Quizzz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- DIV Container - Para englobar as outras divs, tamanho total da página -->
+    <div id="container">
+
+        <!-- DIV Topo - Para o título e imagens -->
+        <div id="topoTitulo">
+            <img src="imagens/header.png" alt="">
+        </div>
+
+
+        <!-- DIV Perguntas - Para os cards de perguntas -->
+        <div id="meioPerguntas">
+            <div class="gapspontas"></div>
+            <div class="cards">
+               <h2 class="titlecards">Pergunta 1</h2> 
+               <p class="textoPerguntas" >Qual é o nome da esposa de Luke Skywalker no universo expandido de Star Wars?</p>
+            </div>
+            <div class="gapscentrais"></div>
+            <div class="cards">
+                <h2 class="titlecards">Pergunta 2</h2>
+                <p class="textoPerguntas">Qual dessas raças de Star Trek odeia humanos?</p>
+            </div>
+            <div class="gapscentrais"></div>
+            <div class="cards">
+                <h2 class="titlecards">Pergunta 3</h2>
+                <p class="textoPerguntas">Do que é composto o núcleo da segunda varinha de Rony Weasley?</p>
+            </div>
+            <div class="gapspontas"></div>
+        </div>
+
+
+        <!-- DIV Labels - Para as labels informativas de escolha -->
+        <div id="meioLabels">
+            <h2 class="meioLabelsH2">Escolha sua Resposta</h2>
+            <h2 class="meioLabelsH2">Escolha sua Resposta</h2>
+            <h2 class="meioLabelsH2">Escolha sua Resposta</h2>
+        </div>
+
+
+        <!-- DIV Selects - Para os menus de select com as respostas -->
+        <div id="meioSelects">
+            <select name="" id="Select1">
+                <option class="optionNull" value="2" >Resposta</option>
+                <option value="0">Bianezzis Mathias</option>
+                <option value="1">Mara Jade</option>
+                <option value="0">Mia Coutera</option>
+            </select>
+            <select name="" id="Select2">
+                <option class="optionNull" value="2">Resposta</option>
+                <option value="1">Klingons</option>
+                <option value="0">Vulcanos</option>
+                <option value="0">Salizianos</option>
+            </select>
+            <select name="" id="Select3">
+                <option class="optionNull" value="2">Resposta</option>
+                <option value="0">Pena de Fênix</option>
+                <option value="0">Escama de Sereia</option>
+                <option value="1">Pelo de Unicórnio</option>
+            </select>
+        </div>
+
+
+        <!-- DIV Resultado - Para a pontuação, resultado e botão de gerar pontos -->
+        <div id="baixoResultado">
+            <img class="iconConfig" src="imagens/icone-esquerda.png" alt="">
+            <h2 class="Pontuação">Sua Pontuação</h2>
+            <input id="inputResultado" type="text" readonly>
+            <button type="button" onclick="Enviar()">Finalizar Quiz</button>
+            <img class="iconConfig" src="imagens/icone-direita.png" alt="">
+        </div>
+
+    </div>
+
+    <script src="lógica-quiz.js"></script>
+
+</body>
+</html>
